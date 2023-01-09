@@ -12,6 +12,7 @@ I began my EDA with data cleaning and visualizations to better understand the re
 The first thing I wanted to understand was what is the distribution of my target variable, churn.
 
 ![Churn Distribution](./images/churn_distribution.jpg)
+
 As visualized in the chart, the churn rate is just about 15%. This implies the dataset is disproportionate in that it has substantially more samples of customers without churn than customers with churn. Later in my analysis, I utilize SMOTE as an oversampling technique to account for this class imbalance. 
 
 
