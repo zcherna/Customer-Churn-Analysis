@@ -19,7 +19,7 @@ I then sought to visualize the distribution of the numeric data by creating a pa
 
 ![pairplot](./images/pairplot.jpg)
 
-With the exception of the 'area_code' and 'number_vmail_messages' columns, you can see how the data is normally distributed.
+With the exception of the 'area_code' and 'number_vmail_messages' columns, you can see how the data is normally distributed. There is also a strong positive linear relationship between 'total_day_minutes' and 'total_day_charge'; 'total_eve_minutes' and 'total_eve_charge"; 'total_night_minutes' and 'total_night_charge'; 'total_intl_calls' and 'total_intl_charge'. This may present an opportunity for feature engineering later on.
 
 I then created a number of additional visualizations which can be viewed in the jupyter notebook, but the one that stood out the most to me was the the countplot that showed the proportion of customer churn given the presence or absence of an International Plan.
 
@@ -27,7 +27,12 @@ I then created a number of additional visualizations which can be viewed in the 
 
 Starting on the left with customers who were signed up for plan, churn rate is only about 10%. Whereas on the right for customers who did not have a plan, churn rate is about 40%. This 30% decrease in churn tells me that the International Plan may be a great service that customers like and may be worth looking deeper into.
 
+# Feature Engineering
+As I mentioned when discussing the pairplot, there is a strong positive linear relationship between many of the features in the dataset as well as potential redundancy. For example, there are separate columns for "daytime calls", "evening calls", and "night calls". In order to visualize the aggregate of these features, I performed feature engineering. The histogram below is one example of the visualizations I created to examine the aggregate of a number of customer attribute features.
 
+![Aggregate Charge](./images/TACHARGE.jpg)
+
+What stood out to me about this plot is you can see clearly that as total aggregate charge approaches that $75 mark, customer churn starts to surpass customer retention.....
 
 
 **For additional info, contact:**
