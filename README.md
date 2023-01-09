@@ -9,7 +9,7 @@ For my analysis I used the SyriaTel dataset, which contains churn data for over 
 Likely to 1.) Churn  2.) Not churn.  
 # Exploratory Data Analysis
 I began my EDA with data cleaning and visualizations to better understand the relationships between Churn and various customer attributes. 
-The first thing I wanted to understand was what is the distribution of my target variable, churn.
+The first thing I wanted to understand was the distribution of my target variable, churn.
 
 ![Churn Distribution](./images/churn_distribution.jpg)
 
