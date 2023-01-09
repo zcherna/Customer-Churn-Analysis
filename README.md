@@ -8,7 +8,7 @@ It is well understood that the cost to acquire new customers is significantly mo
 For my analysis I used the SyriaTel dataset, which contains churn data for over 3,300 telecom customers. This dataset also contains customer attributes such as how much were they paying, how many minutes were used, did the customer have an international plan, and a number of other attributes as well.  My reason for building a predictive model is to solve what is known in data science as a classification problem. I want my model to learn from customer data and accurately classify future customers as falling into two binary groups:
 Likely to 1.) Churn  2.) Not churn.  
 # Exploratory Data Analysis
-![churndistribution](./images/churndistribution.jpg)
+I began my EDA with data cleaning and visualizations to better understand the relationships between the target, Churn, and various customer attributes.
 
 
 
