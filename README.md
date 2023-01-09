@@ -34,6 +34,35 @@ As I mentioned when discussing the pairplot, there is a strong positive linear r
 
 What stood out to me about this plot is you can see clearly that as total aggregate charge approaches that $75 mark, customer churn starts to surpass customer retention. This indicates that customers have limits on how much they're willing to pay. Churn increases for high paying customers.
 
+# Modeling
+The first step in my modeling process was to perform data preprocessing. I created a numeric pipeline to StandardScale numeric data, a categorical pipeline to OneHotEncode categorical data, and a target pipeline to LabelEncode my target, Churn. I then instantiated a column transformer containing these three mini pipelines. My next step was to assign variables to my predictors and target, and then split the data into a training and test set. To easily obtain cross validation scores and visualize my models, I imported the "ModelWithCV()" class provided by Flatiron which used 10 as the kfolds parameter. 
+
+My goal for constructing the best model was to create a few simple, parametric and non-parametric models,  find the top two based on accuracy, and then fine-tune those selected to try and optimize for accuracy. The folllwing results contain the accuracy scores for the simple models:
+LogisticRegression: Crossval train score : 85.91% ; test score: 85.73%
+DecisionTreeClassifier: Crossval train score: 90.95%; test score: 92.56%
+RandomForestClassifier: Crossval train score: 93.83% ; test score: 94.24%
+GradientBoostingClassifier:Crossval train score: 94.91%; test score: 94.96%
+
+Below is a visualization of the crossval train score for the simple GradientBoosting Classifier. The violin plot shows a graphic representation of the target and the swarm plot shows the dots which represent the cross validation.
+
+![ViolinPlot](./images/gbc_violin.jpg)
+
+The top two models, RandomForest and GradientBoosting, are good as is given lack of overfitting and high accuracy scores. However, I wanted to see if improvements could be made. As I mentioned earlier, there is a class imbalance in this dataset. To account for this, I use the SMOTE oversampling technnique along with IMBPipeline to see if it would make a difference. The following are the accuracy scores:
+RandomForest with SMOTE: train: 1.0 ; test: 93.64%
+GradientBoosting with Smote: train: 95.79%; test: 94.48%
+
+I then utilized GridSearch in order to perform hyperparameter tuning. The best parameters I ended up using could be found in the jupyter notebook. The following are the accuracy scores with hyperparameter tuning:
+RandomForest with GridSearch: train: 1.0; test: 94.12%
+GradientBoosting with GridSearch: train: 1.0; test: 95.80%
+
+GradientBoosting appears to be the best model. Below is a visualization of its confusion matrix which enables you to understand the models errors. The square with '9' represents false positives and the square with '26' represents false negatives. 
+
+![confusionmatrix](./images/finalconfmatrix.jpg)
+
+# Final Evaluation
+
+
+
 
 **For additional info, contact:**
 - Zach Cherna: zacharycherna@gmail.com
