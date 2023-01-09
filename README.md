@@ -41,7 +41,7 @@ My goal for constructing the best model was to create a few simple, parametric a
 LogisticRegression: Crossval train score : 85.91% ; test score: 85.73%
 DecisionTreeClassifier: Crossval train score: 90.95%; test score: 92.56%
 RandomForestClassifier: Crossval train score: 93.83% ; test score: 94.24%
-GradientBoostingClassifier:Crossval train score: 94.91%; test score: 94.96%
+GradientBoostingClassifier: Crossval train score: 94.91%; test score: 94.96%
 
 Below is a visualization of the crossval train score for the simple GradientBoosting Classifier. The violin plot shows a graphic representation of the target and the swarm plot shows the dots which represent the cross validation.
 
