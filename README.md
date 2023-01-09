@@ -22,5 +22,7 @@ I then sought to visualize the distribution of the numeric data by creating a pa
 With the exception of the 'area_code' and 'number_vmail_messages' columns, you can see how the data is normally distributed.
 
 
+
+
 **For additional info, contact:**
 - Zach Cherna: zacharycherna@gmail.com
