@@ -8,10 +8,18 @@ It is well understood that the cost to acquire new customers is significantly mo
 For my analysis I used the SyriaTel dataset, which contains churn data for over 3,300 telecom customers. This dataset also contains customer attributes such as how much were they paying, how many minutes were used, did the customer have an international plan, and a number of other attributes as well.  My reason for building a predictive model is to solve what is known in data science as a classification problem. I want my model to learn from customer data and accurately classify future customers as falling into two binary groups:
 Likely to 1.) Churn  2.) Not churn.  
 # Exploratory Data Analysis
-I began my EDA with data cleaning and visualizations to better understand the relationships between the target, Churn, and various customer attributes.
+I began my EDA with data cleaning and visualizations to better understand the relationships between Churn and various customer attributes. 
+The first thing I wanted to understand was what is the distribution of my target variable, churn.
 
+![Churn Distribution](./images/churn_distribution.jpg)
 
+As visualized in the chart, the churn rate is just about 15%. This implies the dataset is disproportionate in that it has substantially more samples of customers without churn than customers with churn. Later in my analysis, I utilize SMOTE as an oversampling technique to account for this class imbalance. 
 
+I then sought to visualize the distribution of the numeric data by creating a pair plot.
+
+![pairplot](./images/pairplot.jpg)
+
+With the exception of the 'area_code' and 'number_vmail_messages' columns, you can see how the data is normally distributed.
 
 
 **For additional info, contact:**
