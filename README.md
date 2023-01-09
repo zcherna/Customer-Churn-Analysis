@@ -21,6 +21,12 @@ I then sought to visualize the distribution of the numeric data by creating a pa
 
 With the exception of the 'area_code' and 'number_vmail_messages' columns, you can see how the data is normally distributed.
 
+I then created a number of additional visualizations which can be viewed in the jupyter notebook, but the one that stood out the most to me was the the countplot that showed the proportion of customer churn given the presence or absence of an International Plan.
+
+![International Plan](./images/intlplan2.jpg)
+
+Starting on the left with customers who were signed up for plan, churn rate is only about 10%. Whereas on the right for customers who did not have a plan, churn rate is about 40%. This 30% decrease in churn tells me that the International Plan may be a great service that customers like and may be worth looking deeper into.
+
 
 
 
