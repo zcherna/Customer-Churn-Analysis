@@ -73,7 +73,7 @@ My second recommendation is to incentivize your high activity users and find a w
 
 # Next Steps
 
-My long-term recommendation is to deploy the model I created. With an accuracy score of 96%, precision score of 92%, and ROC-AUC of 0.93, the model may serve as powerful tool to identify customer churn. As I mentioned earlier, if you know that certain customers have a higher likelihood of leaving and you also have a sense for the reason, you could focus your resources on that specific group and be proactive about alleviating their concerns and keeping them happy.
+My long-term recommendation is to deploy the model I created. With an accuracy score of 96%, precision score of 92%, and ROC-AUC of 0.93, the model may serve as a powerful tool to identify customer churn. As I mentioned earlier, if you know that certain customers have a higher likelihood of leaving and you also have a sense for the reason, you could focus your resources on that specific group and be proactive about alleviating their concerns and keeping them happy.
 To that extent, I’d like to collect more data and fine tune the model even more.
 Having as much data as possible will strengthen the model, and ultimately strengthen the organizations ability to reduce customer churn, save money, and make better decisions. 
 
