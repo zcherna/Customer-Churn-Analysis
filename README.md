@@ -30,9 +30,9 @@ Starting on the left with customers who were signed up for plan, churn rate is o
 # Feature Engineering
 As I mentioned when discussing the pairplot, there is a strong positive linear relationship between many of the features in the dataset as well as potential redundancy. For example, there are separate columns for "daytime calls", "evening calls", and "night calls". In order to visualize the aggregate of these features, I performed feature engineering. The histogram below is one example of the visualizations I created to examine the aggregate of a number of customer attribute features.
 
-![Aggregate Charge](./images/TACHARGE.jpg)
+![Aggregate Charge](./images/aggcharge.jpg)
 
-What stood out to me about this plot is you can see clearly that as total aggregate charge approaches that $75 mark, customer churn starts to surpass customer retention.....
+What stood out to me about this plot is you can see clearly that as total aggregate charge approaches that $75 mark, customer churn starts to surpass customer retention. This indicates that customers have limits on how much they're willing to pay. Churn increases for high paying customers.
 
 
 **For additional info, contact:**
