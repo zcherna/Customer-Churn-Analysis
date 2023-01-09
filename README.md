@@ -15,6 +15,12 @@ The first thing I wanted to understand was what is the distribution of my target
 
 As visualized in the chart, the churn rate is just about 15%. This implies the dataset is disproportionate in that it has substantially more samples of customers without churn than customers with churn. Later in my analysis, I utilize SMOTE as an oversampling technique to account for this class imbalance. 
 
+I then sought to visualize the distribution of the numeric data by creating a pair plot.
+
+![pairplot](./images/pairplot.jpg)
+
+With the exception of the 'area_code' and 'number_vmail_messages' columns, you can see how the data is normally distributed.
+
 
 **For additional info, contact:**
 - Zach Cherna: zacharycherna@gmail.com
