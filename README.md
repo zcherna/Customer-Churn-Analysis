@@ -14,7 +14,7 @@ Likely to 1.) Churn  2.) Not churn.
 
 ## For More Information   
 
-See the full analysis in the [Jupyter Notebook](./Final Notebook.ipynb).
+See the full analysis in the [Jupyter Notebook](./.Final Notebook.ipynb)
 
 **For additional info, contact:**
 - Zach Cherna: zacharycherna@gmail.com
