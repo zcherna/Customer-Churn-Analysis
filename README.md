@@ -61,7 +61,21 @@ GradientBoosting appears to be the best model. Below is a visualization of its c
 
 # Final Evaluation
 
+![confusionmatrix](./images/rocauc.jpg)
 
+For my stakeholder, identifying future customers who may churn is criticial to their ability to target market and try to retain customers. For this reason, I think that accuracy is the most important metric becasue it measures the rate at which the model can correctly predict whether or not a customer will churn. Despite this, I did decide to look at other key metrics as well for added reassurance as to which model is best overall. ROC_AUC is a measurement of the ratio of the rate of True Positive to False postive, with a higher score being better. Gradient Boost had a score of 0.93 while Random Forest had a slightly better score of 0.94. Additional metrics I used include precision, which measures what proportion of positive identifications was actually correct? Recall, which measures what proportion of actual positives was identified correctly? Finally, I measured F1 score, which is a combination of both precision and recall. The results for Gradient Boost are as follows: Recall: 79%, Precision: 92%, F1 Score: 85%. The results for Random Forest are as follows: Recall: 69%, Precision: 90%, F1 Score: 78%. When comparing these metric scores between the two top models, the Gradient Boost was superior in each category, giving me even more assurance that it is indeed the best model. When comparing the final model to the baseline model which had an accuracy score of about 86%, it's clear that this it is a major improvement and should be utilized in the future as a tool to effecetively predict customer churn.
+
+# Recommendations
+
+In the near-term, I have two recommendations based on key findings. First thing is to utilize target marketing to find customers who will sign up for the international plan. The data is clear that churn rate for those customers is about 30% lower than it is for customers who are not on that service.
+
+My second recommendation is to incentivize your high activity users and find a way to lower their costs. We saw that once total charge hit that $75 mark, customer churn started to surpass retention. So I would consider implementing something like a flat-fee program that’ll be attractive to those active users. 
+
+# Next Steps
+
+My long-term recommendation is to deploy the model I created. With an accuracy score of 96%, precision score of 92%, and ROC-AUC of 0.93, the model may serve as powerful tool to identify customer churn. As I mentioned earlier, if you know that certain customers have a higher likelihood of leaving and you also have a sense for the reason, you could focus your resources on that specific group and be proactive about alleviating their concerns and keeping them happy.
+To that extent, I’d like to collect more data and fine tune the model even more.
+Having as much data as possible will strengthen the model, and ultimately strengthen the organizations ability to reduce customer churn, save money, and make better decisions. 
 
 
 **For additional info, contact:**
