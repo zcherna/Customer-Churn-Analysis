@@ -1,4 +1,3 @@
-# Customer Churn Analysis: SyriaTel Dataset
 ![header](./images/Customer_Churn.jpg)
 # Overview
 
